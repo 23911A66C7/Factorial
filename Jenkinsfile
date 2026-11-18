@@ -11,8 +11,8 @@ pipeline {
 
         stage('Build & Compile') {
             steps {
-                // Compiles your Java file directly
-                sh 'javac Factorial.java'
+                // Use 'bat' instead of 'sh' for Windows environments
+                bat 'javac Factorial.java'
             }
         }
 
